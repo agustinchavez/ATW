@@ -1,0 +1,22 @@
+.hero {
+  // background-image: url("../frontend/ger.jpeg");
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: 0rem -50rem;
+  // background : transparent url("../frontend/ger.jpg") no-repeat 0px -30rem scroll;
+  padding: 10rem 0;
+  padding-bottom: 25rem;
+
+  &__container {
+    @extend %section-spacings;
+    display: flex;
+  }
+
+  &__message {
+    padding-right: 2rem;
+
+    @include desktop {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  @include desktop {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  &__search {
+    flex: 0 0 100%;
+    margin-top: 10px;
+    order: 4;
+
+    @include desktop {
+      flex: 1 0 auto;
+      margin: 0 2rem;
+      order: 2;
+    }
+  }
+  .top-bar__search{
+    margin-left: -6rem;
+  }
+
+  .auth-link {
+    order: 2;
+  }
+
+  .cart-link {
+    order: 3;
+  }
+
+  .atw_top {
+    font-size: 3rem;
+    text-align: center;
+    color: $color_atw_orange;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: -.1rem;
+    margin-top: -1rem;
+  }
+
+  .cart-link{
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+
+  a:link {
+    text-decoration: none;
+    color:inherit;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color:inherit;
+  }
+
+  a:hover {
+    text-decoration: inherit;
+    color:inherit;
+  }
+
+  a:active {
+    text-decoration: none;
+    color:inherit;
+  }
+}
